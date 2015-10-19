@@ -8,18 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UICollectionViewDataSource{
+    
+    var tableauDonnees = [Array<String>]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Créer un tableau à partir d'un fichier de type 'plist'
+        let pathFichierPlist = NSBundle.mainBundle().pathForResource("lesDonnees", ofType: "plist")!
+        tableauDonnees = NSArray(contentsOfFile: pathFichierPlist) as! Array<Array<String>>
+        println(tableauDonnees)
+        
+    }
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return tableauDonnees.count
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let celluleCourante = collectionView.dequeueReusableCellWithReuseIdentifier("celluleAffiche", forIndexPath: indexPath) as! Affiche
+        
+        println(tableauDonnees[indexPath.row][0])
+        println(tableauDonnees[indexPath.row][1])
+        
+        return celluleCourante
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+  
 }
 
