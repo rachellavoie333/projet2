@@ -52,6 +52,7 @@
 		EC18FDEA1BD587C900527FCB /* pub32.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC18FDC31BD587C900527FCB /* pub32.jpg */; };
 		EC18FDEB1BD587C900527FCB /* pub33.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC18FDC41BD587C900527FCB /* pub33.jpg */; };
 		EC18FDEC1BD587C900527FCB /* lesDonnees.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC18FDC51BD587C900527FCB /* lesDonnees.plist */; };
+		EC18FDF21BD5A22C00527FCB /* Affiche.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18FDF11BD5A22C00527FCB /* Affiche.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		EC18FDC31BD587C900527FCB /* pub32.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pub32.jpg; sourceTree = "<group>"; };
 		EC18FDC41BD587C900527FCB /* pub33.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pub33.jpg; sourceTree = "<group>"; };
 		EC18FDC51BD587C900527FCB /* lesDonnees.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lesDonnees.plist; sourceTree = "<group>"; };
+		EC18FDF11BD5A22C00527FCB /* Affiche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Affiche.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				EC18FD831BD580B900527FCB /* Images.xcassets */,
 				EC18FD851BD580B900527FCB /* LaunchScreen.xib */,
 				EC18FD7A1BD580B900527FCB /* Supporting Files */,
+				EC18FDF11BD5A22C00527FCB /* Affiche.swift */,
 			);
 			path = projet2;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC18FDF21BD5A22C00527FCB /* Affiche.swift in Sources */,
 				EC18FD7F1BD580B900527FCB /* ViewController.swift in Sources */,
 				EC18FD7D1BD580B900527FCB /* AppDelegate.swift in Sources */,
 			);
