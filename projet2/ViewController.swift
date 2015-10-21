@@ -12,6 +12,8 @@ class ViewController: UIViewController, UICollectionViewDataSource{
     
     var tableauDonnees = [Array<String>]()
     
+    @IBOutlet weak var CVAffiche: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Créer un tableau à partir d'un fichier de type 'plist'
@@ -29,10 +31,26 @@ class ViewController: UIViewController, UICollectionViewDataSource{
         
         let celluleCourante = collectionView.dequeueReusableCellWithReuseIdentifier("celluleAffiche", forIndexPath: indexPath) as! Affiche
         
+        celluleCourante.Nom.text = tableauDonnees[indexPath.row][0]
+        
+        celluleCourante.Image.image = UIImage(named: tableauDonnees[indexPath.row][1])
+        
+        
+        
         println(tableauDonnees[indexPath.row][0])
         println(tableauDonnees[indexPath.row][1])
         
         return celluleCourante
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let selection = CVAffiche.indexPathForCell(sender as! UICollectionViewCell)!.row
+        println("Exécution de la méthode: prepareForSegue pour la cellule numéro: \(selection)")
+        // 2 - Créer un objet pointant sur l'instance de classe de la destination
+        var destination = segue.destinationViewController as! Details
+        
+        // 3 - Passer les informations au controleur de destination
+        destination.informationsDeLAfficheCourant = tableauDonnees[selection]
     }
 
   

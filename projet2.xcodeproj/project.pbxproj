@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40B019321BD81B0400E8BE48 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B019311BD81B0400E8BE48 /* Details.swift */; };
+		40B019341BD82ADF00E8BE48 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B019331BD82ADF00E8BE48 /* Intro.swift */; };
 		EC18FD7D1BD580B900527FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18FD7C1BD580B900527FCB /* AppDelegate.swift */; };
 		EC18FD7F1BD580B900527FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18FD7E1BD580B900527FCB /* ViewController.swift */; };
 		EC18FD821BD580B900527FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC18FD801BD580B900527FCB /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40B019311BD81B0400E8BE48 /* Details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		40B019331BD82ADF00E8BE48 /* Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		EC18FD771BD580B900527FCB /* projet2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projet2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC18FD7B1BD580B900527FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC18FD7C1BD580B900527FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				EC18FD851BD580B900527FCB /* LaunchScreen.xib */,
 				EC18FD7A1BD580B900527FCB /* Supporting Files */,
 				EC18FDF11BD5A22C00527FCB /* Affiche.swift */,
+				40B019311BD81B0400E8BE48 /* Details.swift */,
+				40B019331BD82ADF00E8BE48 /* Intro.swift */,
 			);
 			path = projet2;
 			sourceTree = "<group>";
@@ -395,8 +401,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B019341BD82ADF00E8BE48 /* Intro.swift in Sources */,
 				EC18FDF21BD5A22C00527FCB /* Affiche.swift in Sources */,
 				EC18FD7F1BD580B900527FCB /* ViewController.swift in Sources */,
+				40B019321BD81B0400E8BE48 /* Details.swift in Sources */,
 				EC18FD7D1BD580B900527FCB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

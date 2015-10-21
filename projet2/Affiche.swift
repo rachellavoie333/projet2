@@ -11,4 +11,5 @@ import UIKit
 class Affiche: UICollectionViewCell {
     @IBOutlet weak var Nom: UILabel!
     @IBOutlet weak var Image: UIImageView!
+   
 }
